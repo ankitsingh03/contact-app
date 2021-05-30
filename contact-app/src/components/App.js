@@ -6,6 +6,7 @@ import AddContact from "./AddContact";
 import ContactList from "./ContactList";
 import ContactDetail from "./ContactDetail";
 import EditContact from "./EditContact";
+import Error from "./Error";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import api from "../api/contacts";
 
@@ -95,6 +96,7 @@ function App() {
               />
             )}
           />
+          <Route component={Error} />
         </Switch>
 
         {/* <AddContact AddContactHandler={AddContactHandler} /> */}
