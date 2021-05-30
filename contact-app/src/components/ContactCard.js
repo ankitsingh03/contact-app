@@ -11,6 +11,8 @@ const ContactCard = (props) => {
       <div>{name}</div>
       <div>{email}</div>
       </Link>
+      <Link to={{pathname:`/edit`, state: {contact:props.contact}}} ><button>Edit</button></Link>
+      
       <button onClick={() => props.clickHandler(id)} >Delete</button>
     </div>
   );
